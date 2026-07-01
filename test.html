@@ -1,0 +1,222 @@
+```html
+<DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+		
+			#image {
+			position: fixed;
+			inset: 0;
+
+			background-image: url("https://images.steamusercontent.com/ugc/869619900798107901/901349277CB2F131DECDB4D7376A746D7B939D35/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false.gif");
+			background-size: cover;
+			background-position: center;
+
+			z-index: -1;
+			
+			}
+
+            .con {
+				height: 600px;
+				width: 600px;
+                margin:auto;
+                text-align:center;
+            }
+
+            .a {
+                float:left;
+                width:200px;
+                height:200px;
+				opacity: 0.8;
+                transition: background-color 1s;
+            }
+
+            .b {
+                float:left;
+                width:200px;
+                height:200px;
+				opacity: 0.8;
+                transition: background-color 1s;
+            }
+
+            .c {
+                float:left;
+                width:200px;
+                height:200px;
+				opacity: 0.8;
+                transition: background-color 1s;
+				
+            }
+
+            .d {
+                clear:left;
+                width:200px;
+                height:200px;
+				opacity: 0.8;
+                transition: background-color 1s;
+				float:left;
+            }
+
+            .e {
+                float:right;
+                width:200px;
+                height:200px;
+				opacity: 0.8;
+                transition: background-color 1s;
+            }
+
+            .f {
+                clear:right;
+                width:200px;
+                height:200px;
+				opacity: 0.8;
+                transition: background-color 1s;
+				float:left;
+            }
+
+            .g {
+                float:left;
+                width:200px;
+                height:200px;
+				opacity: 0.8;
+                transition: background-color 1s;
+            }
+
+            .j {
+                float:left;
+                width:200px;
+                height:200px;
+				opacity: 0.8;
+                transition: background-color 1s;
+            }
+
+            
+
+
+        </style>
+
+        <title>js test</title>
+    </head>
+    <body>
+		<div Id="image"></div>
+		<div class=con>
+		
+        <div Id="a1" class="a"></div>
+        <div Id="b1" class="b"></div>
+        <div Id="c1" class="c"></div>
+        <div Id="d1" class="d"></div>
+        <div Id="e1" class="e"></div>
+        <div Id="f1" class="f"></div>
+        <div Id="g1" class="g"></div>
+        <div Id="j1" class="j"></div>
+	
+		</div>
+	
+        <script>
+
+		let hue = 0;
+
+			setInterval(() => {
+				hue = (hue + 0.8) % 720;
+				document.getElementById("image").style.filter = `hue-rotate(${hue}deg)`;
+			}, 1);
+
+
+            setInterval(() => {
+
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+
+
+                document.getElementById("a1").style.backgroundColor = 
+                `rgb(${r}, ${g}, ${b})`
+    }, 725);
+	
+	setInterval(() => {
+
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+
+
+                document.getElementById("b1").style.backgroundColor = 
+                `rgb(${r}, ${g}, ${b})`
+    }, 725);
+	
+	setInterval(() => {
+
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+
+
+                document.getElementById("c1").style.backgroundColor = 
+                `rgb(${r}, ${g}, ${b})`
+    }, 725);
+	
+	setInterval(() => {
+
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+
+
+                document.getElementById("d1").style.backgroundColor = 
+                `rgb(${r}, ${g}, ${b})`
+    }, 725);
+	
+	setInterval(() => {
+
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+
+
+                document.getElementById("e1").style.backgroundColor = 
+                `rgb(${r}, ${g}, ${b})`
+    }, 725);
+	
+	setInterval(() => {
+
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+
+
+                document.getElementById("f1").style.backgroundColor = 
+                `rgb(${r}, ${g}, ${b})`
+    }, 725);
+	
+	setInterval(() => {
+
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+
+
+                document.getElementById("g1").style.backgroundColor = 
+                `rgb(${r}, ${g}, ${b})`
+    }, 725);
+	
+	setInterval(() => {
+
+            const r = Math.floor(Math.random()*256);
+            const g = Math.floor(Math.random()*256);
+            const b = Math.floor(Math.random()*256);
+
+
+                document.getElementById("j1").style.backgroundColor = 
+                `rgb(${r}, ${g}, ${b})`
+    }, 725);
+
+
+	
+
+
+
+         </script>
+		 
+    </body>
+</html>
